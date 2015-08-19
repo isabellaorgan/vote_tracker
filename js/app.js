@@ -1,4 +1,4 @@
-// $(document).ready(function() {
+$(document).ready(function() {
 
 'use strict';
 // Waiting for vote state
@@ -33,8 +33,7 @@ Tracker.prototype.leftphoto = function() {
 	console.log("left is " + vote.leftPhoto.fileLocation);
 	vote.leftPhoto.votes++;
 	console.log("left has " + vote.leftPhoto.votes);
-	results.innerHTML = ('Left has ' + vote.leftPhoto.votes + ' and right has '
-+ vote.rightPhoto.votes);
+	results.innerHTML = ('Left has ' + vote.leftPhoto.votes + ' and right has ' + vote.rightPhoto.votes);
 	$('#nextbutton').show();
 };
 
@@ -80,18 +79,20 @@ nextbutton.addEventListener('click', function (){
 	vote.getPhoto();
 	vote.renderPhotos();
 	$('#nextbutton').hide();
-}); 
+});
 
 vote.getPhoto();
 vote.renderPhotos();
 $('#nextbutton').hide();
 
+});
+
+
+// 
 // vote.waitingForVote();
 // console.dir(vote);
 
 // voteButton.addEventListener('click', waitingForVote);
-
-// });
 
 // Photo.prototype.highlight = function() {
 // 	var getPhoto = document.getElementById('photos');
@@ -103,27 +104,6 @@ $('#nextbutton').hide();
 // 	// drawTheChart()?
 // 	// giveUserOptionToVoteAgain()?
 
-
-
-// };
-// function Tally() {
-// 	var Vote document.getElementById("leftphoto");
-// 	var Vote document.getElementById("rightphoto");
-// 	// return running tally
-
-// }
-
-// Tracker.prototype.getRandomInt = function() {
-// 	return Math.floor(Math.random() * (this.Photo));
-
-// };
-
-// Tracker.prototype.displayPhotos = function() {
-// 	//display random photos
-// 	//prevent same photo displayed for both choices
-// 	//if photo1 === photo2 then re-roll
-// }
-
 // Display Winner State
 
 // Tracker.prototype.displayWinner = function() {
@@ -132,6 +112,3 @@ $('#nextbutton').hide();
 // 	action6()
 // }
 
-
-
-//some 'document.getElementById' variables to access and manipulate document
