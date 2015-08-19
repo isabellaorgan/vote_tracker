@@ -1,8 +1,16 @@
 $(document).ready(function() {
 
 'use strict';
-// Waiting for vote state
-var Photo = function(fileLocation) { //constructor
+
+$.ajax({
+	url: 'https://api.imgur.com/3/album/DDoWy.json',
+	method: 'GET',
+	headers: {
+		'Authorization': 'Client-ID d40262efeb1bb8d'
+	}
+});
+
+var Photo = function(fileLocation) {
 	this.fileLocation = fileLocation;
 	this.votes = 1;
 	this.index = [];
