@@ -69,9 +69,19 @@ Tracker.prototype.leftphoto = function() {
 	results.innerHTML = ('Left has ' + vote.leftPhoto.votes + ' and right has ' + vote.rightPhoto.votes);
 	$('#nextbutton').show();
 };
-
-Tracker.prototype.displayChart = function() {
-
+	
+Tracker.prototype.makeKittenChart = function() {
+	console.log("Make Kitten Chart");
+	var leftValue = 6, rightValue = 9;
+	var ctx = document.getElementById('kittenchart').getContext('2d');
+	console.dir(ctx);
+	var myDoughnutChart = new Chart(ctx).Doughnut([{
+		value: leftValue,
+		color: "blue"
+	}, {
+		value: rightValue,
+		color: "red"
+	} ]);
 };
 
 Tracker.prototype.rightphoto = function() {
@@ -122,17 +132,7 @@ vote.getPhoto();
 vote.renderPhotos();
 $('#nextbutton').hide();
 
-var canvas = document.getElementById('kittens');
-var ctx = canvas.getContext('2d');
-
-      // if (canvas.getContext) {
-      //   var ctx = canvas.getContext("2d");
-
-      //   ctx.fillStyle = "rgb(200,0,0)";
-      //   ctx.fillRect (10, 10, 55, 50);
-
-      //   ctx.fillStyle = "rgba(0, 0, 200, 0.5)";
-      //   ctx.fillRect (30, 30, 55, 50);
+vote.makeKittenChart();
 
 });
 
