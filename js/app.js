@@ -67,12 +67,15 @@ Tracker.prototype.leftphoto = function() {
 	vote.leftPhoto.votes++;
 	console.log("left has " + vote.leftPhoto.votes);
 	results.innerHTML = ('Left has ' + vote.leftPhoto.votes + ' and right has ' + vote.rightPhoto.votes);
+	vote.makeKittenChart();
 	$('#nextbutton').show();
 };
 	
 Tracker.prototype.makeKittenChart = function() {
 	console.log("Make Kitten Chart");
-	var leftValue = 6, rightValue = 9;
+	console.log()
+	var leftValue = vote.leftPhoto.votes; 
+	var rightValue = vote.rightPhoto.votes;
 	var ctx = document.getElementById('kittenchart').getContext('2d');
 	console.dir(ctx);
 	var myDoughnutChart = new Chart(ctx).Doughnut([{
@@ -89,14 +92,16 @@ Tracker.prototype.rightphoto = function() {
 	console.log("right is " + vote.rightPhoto.fileLocation);
 	vote.rightPhoto.votes++;
 	console.log("right has " + vote.rightPhoto.votes);
+	results.innerHTML = ('Left has ' + vote.leftPhoto.votes + ' and right has ' + vote.rightPhoto.votes);
+	vote.makeKittenChart();
 	$('#nextbutton').show();
 };
 
-Tracker.prototype.incrementKittens = function(photo) {
-	var index = this.leftphoto(photo);
-	var index = this.rightphoto(photo);
-	this.photoArray[index][1]++;
-};
+// Tracker.prototype.incrementKittens = function(photo) {
+// 	var index = this.leftphoto(photo);
+// 	var index = this.rightphoto(photo);
+// 	this.photoArray[index][1]++;
+// };
 
 var vote = new Tracker();
 
@@ -125,14 +130,14 @@ lphoto.addEventListener('click', vote.leftphoto);
 nextbutton.addEventListener('click', function (){
 	vote.getPhoto();
 	vote.renderPhotos();
+	vote.makeKittenChart();
 	$('#nextbutton').hide();
 });
 
 vote.getPhoto();
 vote.renderPhotos();
-$('#nextbutton').hide();
-
 vote.makeKittenChart();
+$('#nextbutton').hide();
 
 });
 

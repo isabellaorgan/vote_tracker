@@ -2,13 +2,12 @@ body {
 	text-align: center;
 	width: 90%;
 	margin: 0 auto;
-	background-color: #00bfff;
 	color: #000000;
 	font-family: oxygen;
 	font-size: 16px;
 }
 #leftphoto {
-	border: 5px solid #9400D3;
+	border: 5px solid blue;
 	border-radius: 10px;
 	height: 250px;
 	width: 250px;
@@ -18,7 +17,7 @@ body {
 	right:50px;*/
 }
 #rightphoto {
-	border: 5px solid #FF1493;
+	border: 5px solid red;
 	border-radius: 10px;
 	height: 250px;
 	width: 250px;
