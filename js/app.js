@@ -2,12 +2,37 @@ $(document).ready(function() {
 
 'use strict';
 
+var photoArray = [];
+
 $.ajax({
 	url: 'https://api.imgur.com/3/album/DDoWy.json',
 	method: 'GET',
 	headers: {
 		'Authorization': 'Client-ID d40262efeb1bb8d'
 	}
+})
+
+.done(function(res) {
+	photoArray = res.data.images;
+	console.log(photoArray);
+
+	for (var i = 0; i < photoArray.length; i++) {
+	  photoArray[i].path = photoArray[i].link;
+}
+showImgurKits();
+})
+
+.fail(function(err) {
+	console.log(err);
+});
+
+function showImgurKits() {
+	var randPic = Math.floor(Math.random() * photoArray.length + 1);
+	var dispRandPic = '<img src="' + photoArray[randPic].link + '">';
+	$('#pic Container').html(dispRandPic);
+}
+$('#another').click(function() {
+	showImgurKits();
 });
 
 var Photo = function(fileLocation) {
