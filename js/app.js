@@ -86,20 +86,20 @@ Tracker.prototype.incrementKittens = function(photo) {
 
 var vote = new Tracker();
 
-vote.photoArray.push(new Photo('img/kittens/cat1.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat2.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat3.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat4.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat5.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat6.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat7.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat8.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat9.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat10.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat11.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat12.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat13.jpg'));
-vote.photoArray.push(new Photo('img/kittens/cat14.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/pPA0iM0.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/7ykJ1xi.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/n91EiPd.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/LDiTFeQ.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/ywavhKp.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/9Fg6CZS.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/leaDJOY.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/XA0PRs2.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/rkO8XVX.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/QBZjjMe.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/aGJW6lS.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/60maZWt.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/u9wzm0f.jpg'));
+vote.photoArray.push(new Photo('http://i.imgur.com/vyz8MGP.jpg'));
 
 var lphoto = document.getElementById('leftphoto');
 var rphoto = document.getElementById('rightphoto');
