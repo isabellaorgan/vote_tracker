@@ -70,6 +70,10 @@ Tracker.prototype.leftphoto = function() {
 	$('#nextbutton').show();
 };
 
+Tracker.prototype.displayChart = function() {
+
+};
+
 Tracker.prototype.rightphoto = function() {
 	console.log ("right was clicked");
 	console.log("right is " + vote.rightPhoto.fileLocation);
