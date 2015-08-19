@@ -1,1 +1,9 @@
-//stylesheets for vote tracker
+body {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	background-color: #00bfff;
+	color: #000000;
+	font-family: oxygen;
+	font-size: 16px;
+}
