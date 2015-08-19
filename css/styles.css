@@ -1,0 +1,31 @@
+body {
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
+	color: #000000;
+	font-family: oxygen;
+	font-size: 16px;
+}
+#leftphoto {
+	border: 5px solid blue;
+	border-radius: 10px;
+	height: 250px;
+	width: 250px;
+/*	float: left;
+	position: absolute;
+	top: 120px;
+	right:50px;*/
+}
+#rightphoto {
+	border: 5px solid red;
+	border-radius: 10px;
+	height: 250px;
+	width: 250px;
+/*	float: right;
+	position: absolute;
+	top: 120px;
+	left: 650px;*/
+}
+#chart {
+	clear: both;
+}
