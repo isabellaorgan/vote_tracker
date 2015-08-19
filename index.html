@@ -3,17 +3,20 @@
   <head>
   	<meta charset="utf-8">
 	<title>This is the title</title>
-	<link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
   </head>
 
   <body>
 
   	<h1> Kitten Battle</h1>
     <h2> Who's the cutest?</h2>
-    <div><button onclick="waitingForVote()">
+    <div class="highlight" border="20"><button>
   	 <img id="leftphoto" src="" height="250" width="250" inputid="votebutton" type="click" onclick="vote" /></button>
     </div>
-    <div><button>
+    <div id="results"></div>
+    <button id="nextbutton">"click here to see 2 more kittens"</button>
+    <div class="highlight" border="20"><button>
       <img id="rightphoto" src="" height="250" width="250" input id="votebutton" type="click" onclick="vote" /></button>
     </div>
 
