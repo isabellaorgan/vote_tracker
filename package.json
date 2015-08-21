@@ -1,0 +1,23 @@
+{
+  "name": "vote_tracker",
+  "version": "1.0.0",
+  "description": "Vote tracker for cutest kitten game",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellaorgan/vote_tracker.git"
+  },
+  "author": "Isabella Organ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabellaorgan/vote_tracker/issues"
+  },
+  "homepage": "https://github.com/isabellaorgan/vote_tracker#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
