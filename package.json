@@ -16,6 +16,9 @@
   "bugs": {
     "url": "https://github.com/isabellaorgan/vote_tracker/issues"
   },
+  "engines": {
+    "node": "0.10.x"
+  },
   "homepage": "https://github.com/isabellaorgan/vote_tracker#readme",
   "dependencies": {
     "express": "^4.13.3"
