@@ -2,7 +2,7 @@ var express = require('express');
 var app = express();
 
 // Says what port this server will listen to
-app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 4000));
 
 // setting up a file path of where this server will be accessing things
 app.use(express.static(__dirname + '/public'));
