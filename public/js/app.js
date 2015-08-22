@@ -16,8 +16,7 @@ function ajaxHarvest(ary, cb) {
 
 	.done(function(res) {
 		
-		cb(res.data.images);
-	  
+		cb(res.data.images);  
 	})
 
 	.fail(function(err) {
@@ -31,7 +30,7 @@ function showImgurKits() {
 	$('#pic Container').html(dispRandPic);
 }
 $('#another').click(function() {
-	// showImgurKits();
+
 });
 
 var Photo = function(fileLocation) {
@@ -98,27 +97,6 @@ Tracker.prototype.rightphoto = function() {
 	$('#nextbutton').show();
 };
 
-// Tracker.prototype.incrementKittens = function(photo) {
-// 	var index = this.leftphoto(photo);
-// 	var index = this.rightphoto(photo);
-// 	this.photoArray[index][1]++;
-// };
-
-// // vote.photoArray.push(new Photo('http://i.imgur.com/pPA0iM0.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/7ykJ1xi.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/n91EiPd.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/LDiTFeQ.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/ywavhKp.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/9Fg6CZS.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/leaDJOY.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/XA0PRs2.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/rkO8XVX.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/QBZjjMe.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/aGJW6lS.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/60maZWt.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/u9wzm0f.jpg'));
-// // vote.photoArray.push(new Photo('http://i.imgur.com/vyz8MGP.jpg'));
-
 var lphoto = document.getElementById('leftphoto');
 var rphoto = document.getElementById('rightphoto');
 var results = document.getElementById('results');
@@ -141,11 +119,7 @@ ajaxHarvest(vote.photoArray,function(data){
 	vote.makeKittenChart();
 });
 
-
-//vote.makeKittenChart();
 $('#nextbutton').hide();
-//showImgurKits();
-//vote.renderPhotos();
 
 });
 
